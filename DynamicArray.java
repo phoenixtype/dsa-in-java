@@ -71,7 +71,6 @@ class DynamicArray {
                 answers.add(lastAnswer);
             }
         }
-
         return answers;
     }
 }
