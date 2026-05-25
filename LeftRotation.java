@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 // https://www.hackerrank.com/challenges/array-left-rotation
 
 public class LeftRotation {

@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ArrayManipulation {
+//https://www.hackerrank.com/challenges/sparse-arrays/problem
+
+// https://gemini.google.com/share/d7e590bdeb5e
+
+public class SparseArray {
 
     /**
      * Counts the occurrences of each query string within the input string list.

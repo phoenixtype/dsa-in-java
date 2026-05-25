@@ -5,37 +5,6 @@ import java.util.Scanner;
 // https://www.hackerrank.com/challenges/dynamic-array/problem
 
 class DynamicArray {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Read the first line: n (number of empty arrays) and q (number of queries)
-        int n = scanner.nextInt();
-        int q = scanner.nextInt();
-
-        // Initialize the 2D list to store the queries
-        List<List<Integer>> queries = new ArrayList<>();
-
-        // Loop q times to read all the queries
-        for (int i = 0; i < q; i++) {
-            List<Integer> query = new ArrayList<>();
-            query.add(scanner.nextInt()); // qType
-            query.add(scanner.nextInt()); // x
-            query.add(scanner.nextInt()); // y
-            queries.add(query);
-        }
-
-        // Call the dynamicArray function
-        List<Integer> result = dynamicArray(n, queries);
-
-        // Print the results, each on a new line
-        for (Integer integer : result) {
-            System.out.println(integer);
-        }
-
-        scanner.close();
-    }
-
     public static List<Integer> dynamicArray(int n, List<List<Integer>> queries) {
         // 1. Declare a 2-dimensional array, arr, with n empty arrays
         List<List<Integer>> arr = new ArrayList<>();
@@ -72,5 +41,35 @@ class DynamicArray {
             }
         }
         return answers;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read the first line: n (number of empty arrays) and q (number of queries)
+        int n = scanner.nextInt();
+        int q = scanner.nextInt();
+
+        // Initialize the 2D list to store the queries
+        List<List<Integer>> queries = new ArrayList<>();
+
+        // Loop q times to read all the queries
+        for (int i = 0; i < q; i++) {
+            List<Integer> query = new ArrayList<>();
+            query.add(scanner.nextInt()); // qType
+            query.add(scanner.nextInt()); // x
+            query.add(scanner.nextInt()); // y
+            queries.add(query);
+        }
+
+        // Call the dynamicArray function
+        List<Integer> result = dynamicArray(n, queries);
+
+        // Print the results, each on a new line
+        for (Integer integer : result) {
+            System.out.println(integer);
+        }
+
+        scanner.close();
     }
 }
