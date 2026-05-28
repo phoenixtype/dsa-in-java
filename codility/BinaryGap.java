@@ -1,7 +1,7 @@
 package codility;
 
 // Problem: Find the longest sequence of zeros surrounded by ones in the binary representation of N.
-//Example: N=1041 → binary 10000010001 → longest gap = 5
+// Example: N=1041 → binary 10000010001 → the longest gap = 5
 
 public class BinaryGap {
     public static void main(String[] args) {
@@ -27,7 +27,6 @@ public class BinaryGap {
                 currentGap++;
             }
         }
-
         return maxGap;
     }
 }
